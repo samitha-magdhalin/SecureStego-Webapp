@@ -1,0 +1,7 @@
+{
+  "name": "SecureStego– Secure AI Steganography Platform",
+  "description": "A secure communication platform combining RSA encryption, LSB steganography, and blockchain-based audit logging with AI anomaly detection.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
