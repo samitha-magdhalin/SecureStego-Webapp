@@ -721,8 +721,8 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     app.use(express.static('dist'));
-    // Fallback to index.html for React Router
-    app.get('*', (req, res) => {
+    // Fallback to index.html for React Router (Express 5 syntax)
+    app.get('*all', (req, res) => {
       res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
     });
   }
